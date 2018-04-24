@@ -23,12 +23,9 @@
 
             <nav class="menu">
               <ul class="menu_list">
-                <li class="menu_item"><a href="index-light.html#content">O нас</a></li>
-                <li class="menu_item"><a href="index-light.html#about">Цели</a></li>
-                <li class="menu_item"><a href="index-light.html#benefits">Задачи</a></li>
-                <li class="menu_item"><a href="index-light.html#team">Команда</a></li>
-                <li class="menu_item"><a href="index-light.html#gallery">галерея</a></li>
-                <li class="menu_item"><a href="index-light.html#contacts">Контакты</a></li>
+                @foreach($menus as $menu)
+                <li class="menu_item"><a href="{{ $menu->url }}">{{ $menu->title }}</a></li>
+                @endforeach
                 <li class="menu_item menu_item--custom"><a href="index-light.html#">Cвяжитесь с нами</a></li>
               </ul>
 
