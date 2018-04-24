@@ -22,6 +22,8 @@ Route::resource('menus', 'MenuController');
 
 Route::resource('tasks', 'TaskController');
 
-
+Route::post('/upload', 'PhotoController@upload')->name('upload');
 
 Route::resource('contacts', 'ContactController');
+
+Route::resource('photos', 'PhotoController');

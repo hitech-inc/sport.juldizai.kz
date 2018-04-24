@@ -175,46 +175,13 @@
     <div id="gallery" class="gallery">
       <div class="container-fluid">
         <div class="row row--flex row--flex-wrap gallery-images">
+          @foreach($gallery as $photo)
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/01.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/01.jpg.pagespeed.ce.LhPPFk3vHZ.jpg" alt="" data-pagespeed-url-hash="3040833188" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            <a href="/img/uploads/{{ $photo->path }}" class="gallery_item" data-effect="mfp-zoom-in">
+              <img src="/img/uploads/{{ $photo->path }}" alt="gallery-photos">
             </a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/02.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/02.jpg.pagespeed.ce.c7KQO1cpe8.jpg" alt="" data-pagespeed-url-hash="3335333109" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/03.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/03.jpg.pagespeed.ce.VCOPWxNorI.jpg" alt="" data-pagespeed-url-hash="3629833030" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/04.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/04.jpg.pagespeed.ce.c_fPBNdn8c.jpg" alt="" data-pagespeed-url-hash="3924332951" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/05.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/05.jpg.pagespeed.ce.AFueXXnav1.jpg" alt="" data-pagespeed-url-hash="4218832872" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/06.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/06.jpg.pagespeed.ce.lD0vP8TO3g.jpg" alt="" data-pagespeed-url-hash="218365497" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/07.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/07.jpg.pagespeed.ce.wFy_QdB1Qq.jpg" alt="" data-pagespeed-url-hash="512865418" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="img/gallery/real/08.jpg" class="gallery_item" data-effect="mfp-zoom-in">
-              <img src="img/gallery/08.jpg.pagespeed.ce.rWMOfCP3r_.jpg" alt="" data-pagespeed-url-hash="807365339" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-            </a>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
