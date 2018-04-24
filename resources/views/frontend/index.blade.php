@@ -487,12 +487,27 @@
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
-        <div id="map" class="map" data-zoom="15" data-coordinates="51.165818, 71.423394" data-key="AIzaSyBMe_D6gusKtAYXmSwgO8iXFPlb4c0iOwU" data-center="51.165818, 71.423394"></div>
+        <div id="map" class="map"></div>
       </div>
     </div>
   </div>
 </div>
 <a href="index-light.html#" class="back-to-top" title="Back to top"></a>
+<script>
+function initMap() {
 
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {lat: 42.349610, lng: 69.551717}
+  });
+  var marker = new google.maps.Marker({
+    position: {lat: 42.349610, lng: 69.551717},
+    map: map,
+    title: 'Hello World!'
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfwH806ZqKTrWyaP6eHXRr-75xigyovY&callback=initMap"
+    async defer></script>
 
 @endsection
