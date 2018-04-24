@@ -19,3 +19,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('menus', 'MenuController');
+
+Route::resource('tasks', 'TaskController');
+

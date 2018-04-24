@@ -56,89 +56,21 @@
     </div>
 
     <div class="row row--flex row--flex-wrap row--flex-space">
+      @foreach($tasks as $task)
       <div class="col-sm-6 col-md-4">
         <div class="benefit">
           <div class="benefit_img">
-            <svg class="icon icon-1"><use xlink:href="#icon-1"></use></svg>
+            <svg class="icon icon-{{ $loop->iteration }}"><use xlink:href="#icon-{{ $loop->iteration }}"></use></svg>
           </div>
 
           <!-- <h4 class="benefit_title">Calorie Control</h4> -->
 
           <div class="benefit_text">
-            Выявление и развитие талантливых в спорте детей с ограниченными возможностями;
+            {{ $task->text }}
           </div>
         </div>
       </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="benefit">
-          <div class="benefit_img">
-            <svg class="icon icon-2"><use xlink:href="#icon-2"></use></svg>
-          </div>
-
-          <!-- <h4 class="benefit_title">Weight control</h4> -->
-
-          <div class="benefit_text">
-            Способствование установлению дружеских контактов между командами, укрепление спортивного духа участников; 
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="benefit">
-          <div class="benefit_img">
-            <svg class="icon icon-3"><use xlink:href="#icon-3"></use></svg>
-          </div>
-
-          <!-- <h4 class="benefit_title">Endurance Training</h4> -->
-
-          <div class="benefit_text">
-           Овладение высоким уровнем спортивного мастерства, формирование спортивной культуры инвалидов, приобщение их к ценностям физической культуры;
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="benefit">
-          <div class="benefit_img">
-            <svg class="icon icon-4"><use xlink:href="#icon-4"></use></svg>
-          </div>
-
-          <!-- <h4 class="benefit_title">Stretching Classes</h4> -->
-
-          <div class="benefit_text">
-           Помочь участникам приобретать навыки труда и коллективных осознанных действий через участие в соревновательном процессе, выступать целенаправленно и организованно;
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="benefit">
-          <div class="benefit_img">
-            <svg class="icon icon-5"><use xlink:href="#icon-5"></use></svg>
-          </div>
-
-          <!-- <h4 class="benefit_title">Power Training</h4> -->
-
-          <div class="benefit_text">
-            Создание возможностей для постепенной адаптации к реальным жизненным условиям и улучшение качества жизни детей с ограниченными возможностями.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="benefit">
-          <div class="benefit_img">
-            <svg class="icon icon-6"><use xlink:href="#icon-6"></use></svg>
-          </div>
-
-          <!-- <h4 class="benefit_title">Equipment</h4> -->
-
-          <div class="benefit_text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
 
     <div class="row mt-3">
