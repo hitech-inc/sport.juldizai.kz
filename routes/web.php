@@ -22,3 +22,6 @@ Route::resource('menus', 'MenuController');
 
 Route::resource('tasks', 'TaskController');
 
+
+
+Route::resource('contacts', 'ContactController');

@@ -375,18 +375,15 @@
           <ul class="places">
             <li class="places_item">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
-              ул. А.Бокейхана,<br>
-              24, БЦ «Аффари»,<br>
-              РК г. Астана
+              {!! $contacts->address !!}
             </li>   
             <li class="places_item">
               <i class="fa fa-mobile" aria-hidden="true"></i>
-              <a href="tel:+77172579414">8 (7172) 57 94 14,</a>​​​​​​​<br>
-              <a href="tel:+77172579414">8 (7172) 57 94 14</a>​​​​​​​<br>
+              <a href="tel:+77172579414">{!! $contacts->phone !!}</a>​​​​​​​<br>
             </li>
             <li class="places_item">
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              <a href="mailto:zhuldizai@bi-group.kz">zhuldizai@bi-group.kz</a>
+              <a href="mailto:zhuldizai@bi-group.kz">{!! $contacts->email !!}</a>
             </li>
           </ul>
 

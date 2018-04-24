@@ -8,7 +8,7 @@ use InfyOm\Generator\Common\BaseRepository;
 /**
  * Class ContactRepository
  * @package App\Repositories
- * @version April 24, 2018, 10:55 am UTC
+ * @version April 24, 2018, 11:00 am UTC
  *
  * @method Contact findWithoutFail($id, $columns = ['*'])
  * @method Contact find($id, $columns = ['*'])
@@ -20,7 +20,9 @@ class ContactRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'title'
+        'address',
+        'phone',
+        'email'
     ];
 
     /**
