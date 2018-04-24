@@ -30,10 +30,11 @@
 	
 
 	<script src="/js/vendor/jquery.js.pagespeed.jm.29OAZzvhfX.js"></script>
-	<script src="/js/vendor/jquery.magnific-popup.min.js+jquery.validate.min.js+map-light.js.pagespeed.jc.hFVLR3OZ2I.js"></script><script>eval(mod_pagespeed_quqGqncorR);</script>
+	<script src="/js/vendor/jquery.magnific-popup.min.js+jquery.validate.min.js+map-dark.js.pagespeed.jc.s7zmtXUOWI.js"></script><script>eval(mod_pagespeed_quqGqncorR);</script>
 	<script>eval(mod_pagespeed_rkvQPayWJi);</script>
 	<script>eval(mod_pagespeed_2HPBan8Lse);</script>
-	<script src="/js/vendor,_swiper.jquery.min.js+main.js.pagespeed.jc.FGVjyljmUX.js"></script><script>eval(mod_pagespeed_ldDTB64h9g);</script>
+	<script src="/js/vendor,_swiper.jquery.min.js+main.js.pagespeed.jc.FGVjyljmUX.js"></script>
+	<script>eval(mod_pagespeed_ldDTB64h9g);</script>
 	<script>eval(mod_pagespeed_dtPOymzkwl);</script>
 </body>
 </html>
