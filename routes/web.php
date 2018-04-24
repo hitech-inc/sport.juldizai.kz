@@ -27,3 +27,5 @@ Route::post('/upload', 'PhotoController@upload')->name('upload');
 Route::resource('contacts', 'ContactController');
 
 Route::resource('photos', 'PhotoController');
+
+Route::resource('teammates', 'TeammateController');

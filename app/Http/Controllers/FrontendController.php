@@ -8,6 +8,7 @@ use App\Models\Menu;
 use App\Models\Task;
 use App\Models\Contact;
 use App\Models\Photo;
+use App\Models\Teammate;
 
 
 class FrontendController extends Controller
@@ -19,7 +20,8 @@ class FrontendController extends Controller
     	$tasks = Task::all();
     	$contacts = Contact::first();
     	$gallery = Photo::all()->where('alt','gallery-photos')->take(8);
-        return view('frontend.index',compact('menus','tasks','contacts','gallery'));
+    	$teammates = Teammate::all()->take(3);
+        return view('frontend.index',compact('menus','tasks','contacts','gallery','teammates'));
     }
 
 }

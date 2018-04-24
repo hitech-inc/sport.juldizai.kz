@@ -27,6 +27,8 @@
 
                  <div class="col-md-1" style="padding: 3px; height: 100%;">
                     <img src="img/uploads/{{$photo->path}}" alt="fff" style="width:100%;">
+                    <p style="font-size: 0.6em;"><b>ALT :</b> {{$photo->alt}}</p>
+                    <p style="font-size: 0.6em;"><b>NAME :</b> {{$photo->path}}</p>
                 </div>
                 <div class="col-md-1" style="padding: 3px; height: 100%;">
                     <a href="{!! route('photos.show', [$photo->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>

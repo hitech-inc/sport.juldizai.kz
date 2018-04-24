@@ -91,16 +91,17 @@
         </div>
       </div>
     </div>
-
     <div class="row">
+
+@foreach($teammates as $man)
       <div class="col-sm-6 col-md-4">
         <div class="person">
           <div class="person_photo">
-            <img src="img/team/01.jpg.pagespeed.ce.h_PAbraCNw.jpg" alt="" data-pagespeed-url-hash="321347643" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            <img src="/img/uploads/{{$man->img}}" alt="" data-pagespeed-url-hash="321347643" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
           </div>
           <div class="person_name">
-            Jess Briggs
-            <span>Fitness Coach</span>
+            {{$man->name}}
+            <span>{{$man->occupation}}</span>
           </div>
 
           <div class="person_socials">
@@ -112,46 +113,7 @@
           </div>
         </div>
       </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="person">
-          <div class="person_photo">
-            <img src="img/team/02.jpg.pagespeed.ce.C8s6whAjW6.jpg" alt="" data-pagespeed-url-hash="615847564" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-          </div>
-          <div class="person_name">
-            Will Paulson
-            <span>Bodybuilding Coach</span>
-          </div>
-
-          <div class="person_socials">
-            <ul class="socials socials--person">
-              <li class="socials_item"><a href="index-light.html#content" class="socials_link"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-              <li class="socials_item"><a href="index-light.html#content" class="socials_link"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-              <li class="socials_item"><a href="index-light.html#content" class="socials_link"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="person">
-          <div class="person_photo">
-            <img src="img/team/03.jpg.pagespeed.ce.jhXMPDOPXD.jpg" alt="" data-pagespeed-url-hash="910347485" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-          </div>
-          <div class="person_name">
-            Samantha Marques
-            <span>CrossFit Coach</span>
-          </div>
-
-          <div class="person_socials">
-            <ul class="socials socials--person">
-              <li class="socials_item"><a href="index-light.html#content" class="socials_link"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-              <li class="socials_item"><a href="index-light.html#content" class="socials_link"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-              <li class="socials_item"><a href="index-light.html#content" class="socials_link"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+@endforeach
     </div>
   </div>
 </div>
