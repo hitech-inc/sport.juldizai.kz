@@ -161,7 +161,7 @@ class PhotoController extends AppBaseController
             $file = $request->file('file');
             $extension = $file->extension();
             $filename = $time."_".$file->getClientOriginalName();
-            $file->move(public_path().'\img\uploads', $filename);
+            $file->move(public_path().'/img/uploads', $filename);
                 
             Photo::create([
                 'path' => '/' . $filename,
